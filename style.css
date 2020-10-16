@@ -1,0 +1,175 @@
+body {
+	color: white;
+	font-family: sans-serif;
+}
+
+table#widget {
+	border-collapse: collapse;
+	width: 276px;
+}
+
+thead tr td {
+	background: linear-gradient(#3d3d3d, #252525);
+	border-bottom: 1px solid black;
+	border-radius: 8px 8px 0px 0px;
+	padding: 1em;
+}
+
+thead tr td h4 {
+	font-weight: bold;
+	margin: 0;
+}
+
+tbody {
+	background-color: #000000;
+}
+
+tbody tr.contact {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+tbody tr.contact.odd {
+	background-color: #212121;
+}
+
+tbody tr.contact.even {
+	background-color: #1a1a1a;
+}
+
+tbody tr.contact td {
+	padding: 0.25em;
+}
+
+tbody tr.contact td.status {
+	font-size: 120%;
+	font-weight: bold;
+	padding-left: 0.5em;
+	text-align: center;
+	width: 10%;
+}
+
+tbody tr.contact td.status.online {
+	color: #00fb26;
+}
+
+tbody tr.contact td.status.idle {
+	color: #c7c51b;
+}
+
+tbody tr.contact td.status.offline {
+	color: #ff0207;
+}
+
+tbody tr.contact td.name,
+tbody tr.contact td.info {
+	font-size: 80%;
+}
+
+tbody tr.contact td.name {
+	border-right: 1px solid #1b1b1b;
+	width: 25%;
+}
+
+tbody tr.contact td.info {
+	color: #545454;
+	padding-left: 1em;
+	width: 65%;
+}
+
+tbody tr.contact td.info div {
+	padding: 0.3em 0;
+}
+
+tbody tr.contact td.info div.email {
+}
+
+tbody tr.contact td.info div.email a {
+	color: #545454;
+	text-decoration: none;
+}
+
+table.phone tbody tr.contact td.info div.email {
+	display: none;
+}
+
+table.email tbody tr.contact td.info div.phone {
+	display: none;
+}
+
+tbody tr.contact td.info div.address {
+	display: none;
+}
+
+tbody:hover tr.contact.odd {
+	background-color: #070707;
+}
+
+tbody:hover tr.contact.even {
+	background-color: #050505;
+}
+
+tbody:hover tr.contact:not(:hover) td.status.online {
+	color: #003204;
+}
+
+tbody:hover tr.contact:not(:hover) td.status.idle {
+	color: #282708;
+}
+
+tbody:hover tr.contact:not(:hover) td.status.offline {
+	color: #3a0000;
+}
+
+tbody:hover tr.contact td.name {
+	color: #282828;
+}
+
+tbody:hover tr.contact td.info div.email a,
+tbody:hover tr.contact td.info div.phone {
+	color: #0f0f0f;
+}
+
+tbody:hover tr.contact:hover td.name {
+	color: white;
+}
+
+tbody:hover tr.contact:not(:hover) td.name {
+	border-right: 1px solid black;
+}
+
+tbody tr.contact:hover td.status,
+tbody tr.contact:hover td.name,
+tbody tr.contact:hover td.info {
+	background-color: #484848;
+	border-right: 0;
+}
+
+tbody tr.contact:hover td.info {
+	color: white;
+	position: absolute;
+	width: 162px;
+}
+
+table tbody tr.contact:hover td.info div.email,
+table tbody tr.contact:hover td.info div.phone,
+table tbody tr.contact:hover td.info div.address {
+	display: block;
+}
+
+tbody tr.contact:hover td.info div.phone {
+	color: white;
+}
+
+tbody tr.contact:hover td.info div.email a {
+	color: #10e3ec;
+	text-decoration: underline;
+}
+
+tfoot tr td {
+	background-color: #202020;
+	border-top: 1px solid black;
+	border-radius: 0px 0px 8px 8px;
+	text-align: right;
+	padding: 1em;
+}
